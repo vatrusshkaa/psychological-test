@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тест - Вопрос 31</title>
+</head>
+<body>
+    <div class="question-number">Вопрос 31</div>
+    <div class="container">
+        <h1>Бывает ли, что Вам не спится из-за того, что разные мысли лезут в голову?</h1>
+        <div class="button-container">
+            <button class="yes" onclick="answer('yes')">Да</button>
+            <button class="no" onclick="answer('no')">Нет</button>
+        </div>
+    </div>
+    <button class="back-button" onclick="goBack()">Назад</button>
+    <script>
+        function answer(response) {
+            localStorage.setItem('q31', response);
+            window.location.href = 'q32.html'; 
+        }
+
+        function goBack() {
+            window.location.href = 'q30.html'; 
+        }
+    </script>
+</body>
+</html>

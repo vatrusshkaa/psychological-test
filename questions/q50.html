@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тест - Вопрос 50</title>
+</head>
+<body>
+    <div class="question-number">Вопрос 50</div>
+    <div class="container">
+        <h1>Легко ли Вы обижаетесь, когда люди указывают на Ваши ошибки в работе или на Ваши личные промахи?</h1>
+        <div class="button-container">
+            <button class="yes" onclick="answer('yes')">Да</button>
+            <button class="no" onclick="answer('no')">Нет</button>
+        </div>
+    </div>
+    <button class="back-button" onclick="goBack()">Назад</button>
+    <script>
+        function answer(response) {
+            localStorage.setItem('q50', response);
+            window.location.href = 'q51.html'; 
+        }
+
+        function goBack() {
+            window.location.href = 'q49.html'; 
+        }
+    </script>
+</body>
+</html>

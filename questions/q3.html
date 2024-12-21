@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тест - Вопрос 3</title>
+</head>
+<body>
+    <div class="question-number">Вопрос 3</div>
+    <div class="container">
+        <h1>Вы считаете себя человеком беззаботным?</h1>
+        <div class="button-container"> <!-- Контейнер для кнопок -->
+            <button class="yes" onclick="answer('yes')">Да</button>
+            <button class="no" onclick="answer('no')">Нет</button>
+        </div>
+    </div>
+    <button class="back-button" onclick="goBack()">Назад</button>
+    <script>
+        function answer(response) {
+            localStorage.setItem('q3', response);
+            window.location.href = 'q4.html';
+        }
+
+        function goBack() {
+            window.location.href = 'q2.html'; 
+        }
+    </script>
+</body>
+</html>
