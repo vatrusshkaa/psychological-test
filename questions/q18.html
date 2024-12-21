@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тест - Вопрос 18</title>
+</head>
+<body>
+    <div class="question-number">Вопрос 18</div>
+    <div class="container">
+        <h1>Бывают ли у Вас иногда мысли, которые Вы хотели бы скрыть от других?</h1>
+        <div class="button-container">
+            <button class="yes" onclick="answer('yes')">Да</button>
+            <button class="no" onclick="answer('no')">Нет</button>
+        </div>
+    </div>
+    <button class="back-button" onclick="goBack()">Назад</button>
+    <script>
+        function answer(response) {
+            localStorage.setItem('q18', response);
+            // Здесь можно добавить переход на финальную страницу или результат
+            window.location.href = 'q19.html'; // Например, переход на страницу с результатами
+        }
+
+        function goBack() {
+            window.location.href = 'q17.html'; 
+        }
+    </script>
+</body>
+</html>

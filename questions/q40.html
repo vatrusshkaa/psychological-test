@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тест - Вопрос 40</title>
+</head>
+<body>
+    <div class="question-number">Вопрос 40</div>
+    <div class="container">
+        <h1>Верно ли, что нередко Вам не дают покоя мысли о разных неприятностях и ужасах, которые могли бы произойти, хотя все кончилось благополучно?</h1>
+        <div class="button-container">
+            <button class="yes" onclick="answer('yes')">Да</button>
+            <button class="no" onclick="answer('no')">Нет</button>
+        </div>
+    </div>
+    <button class="back-button" onclick="goBack()">Назад</button>
+    <script>
+        function answer(response) {
+            localStorage.setItem('q40', response);
+            window.location.href = 'q41.html'; 
+        }
+
+        function goBack() {
+            window.location.href = 'q39.html'; 
+        }
+    </script>
+</body>
+</html>

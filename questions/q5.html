@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тест - Вопрос 5</title>
+</head>
+<body>
+    <div class="question-number">Вопрос 5</div>
+    <div class="container">
+        <h1>Обдумываете ли Вы свои дела не спеша, предпочитаете подождать, прежде чем действовать?</h1>
+        <div class="button-container"> <!-- Контейнер для кнопок -->
+            <button class="yes" onclick="answer('yes')">Да</button>
+            <button class="no" onclick="answer('no')">Нет</button>
+        </div>
+    </div>
+    <button class="back-button" onclick="goBack()">Назад</button>
+    <script>
+        function answer(response) {
+            localStorage.setItem('q5', response);
+            window.location.href = 'q6.html';
+        }
+
+        function goBack() {
+            window.location.href = 'q4.html'; 
+        }
+    </script>
+</body>
+</html>

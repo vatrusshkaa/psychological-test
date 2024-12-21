@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тест - Вопрос 8</title>
+</head>
+<body>
+    <div class="question-number">Вопрос 8</div>
+    <div class="container">
+        <h1>Обычно Вы поступаете и говорите быстро, не раздумывая?</h1>
+        <div class="button-container"> <!-- Контейнер для кнопок -->
+            <button class="yes" onclick="answer('yes')">Да</button>
+            <button class="no" onclick="answer('no')">Нет</button>
+        </div>
+    </div>
+    <button class="back-button" onclick="goBack()">Назад</button>
+    <script>
+        function answer(response) {
+            localStorage.setItem('q8', response);
+            window.location.href = 'q9.html'; // Переход на следующий вопрос
+        }
+
+        function goBack() {
+            window.location.href = 'q7.html'; // Переход на предыдущий вопрос
+        }
+    </script>
+</body>
+</html>
