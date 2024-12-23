@@ -1,0 +1,142 @@
+body {
+    font-family: 'Ysabeau Office Thin', 'Ysabeau Office Medium';
+    background-color: #4A5759; /* Цвет фона всей страницы */
+    margin: 0;
+    padding: 0;
+    color: #F7E1D7;
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: 100vh; /* Высота на весь экран */
+}
+
+.title {
+    font-size: 43px;
+     font-family: 'Ysabeau Office Medium';
+}
+
+.question {
+    padding: 40px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container {
+    width: 80%; /* Фиксированная ширина блока с вопросом */
+    padding: 20px;
+    background: #4f5d5f; /* Цвет фона блока с вопросом */
+    border-radius: 20px;
+    border: 3px solid #5a615a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex; /* Используем flexbox для центрирования содержимого */
+    flex-direction: column; /* Вертикальная ориентация содержимого */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+
+}
+
+.main-container {
+    width: 80%; /* Ширина блока, адаптирующаяся под экран */
+    padding: 20px;
+    background: #4f5d5f; /* Цвет фона блока с вопросом */
+    border-radius: 20px;
+    border: 3px solid #5a615a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex; /* Используем flexbox для центрирования содержимого */
+    flex-direction: column; /* Вертикальная ориентация содержимого */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    
+}
+
+.question-number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #F7E1D7; 
+}
+
+.back-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: 'Ysabeau Office ExtraBold';
+    color: #f3f3f3fb;
+    width: 150px;
+    height: 40px;
+    background-color: #69726a;
+    border-radius: 12px;
+    border: none; 
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; 
+}
+
+.back-button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.yes, .no {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Ysabeau Office ExtraBold';
+    color: #f3f3f3fb;
+    width: 80px;
+    border-radius: 12px;
+    border: none; 
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; 
+}
+
+.yes {
+    background-color: #8BA78C;
+}
+
+.yes:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.no {
+    background-color: #B89E9E;
+}
+
+.no:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.start-button{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: 'Ysabeau Office ExtraBold';
+    color: #fffffffb;
+    width: 300px;
+    height: 60px;
+    border-radius: 12px;
+    border: none; 
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; 
+    background-color: #99b89d;
+    align-content: center;
+}
+
+.button-cont{
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+
+}
+
+.start-button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.questions {
+    text-align: center;
+    font-size: 20px;
+}
